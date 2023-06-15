@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Elite Dangerous</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <h1 class="title">Calculadora Elite Dangerous</h1>
+        </div>
+        <div>
+            <form class="tipsForm" id="tipsForm">
+                <div class="form-group">
+                    <label for="capacity">
+                        <p>Quanto sua capacidade de carga</p>
+                    </label>
+                    <div class="form-row">
+                       <input type="number" placeholder="100" name="capacity" id="capacity" class="formInput peso" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="buyvalue">
+                        <p>Quanto você pagou por unidade?</p>
+                    </label>
+                    <div class="form-row">
+                         <input type="number" placeholder="100" name="buyValue" id="buyValue" class="formInput preco" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sellvalue">
+                        <p>Quanto você vai receber por unidade?</p>
+                    </label>
+                    <div class="form-row">
+                       <input type="number" placeholder="100" name="sellValue" id="sellValue" class="formInput preco" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="saltodis">
+                        <p>Quanto sua distância de salto?</p>
+                    </label>
+                    <div class="form-row">
+                         <input type="number" step=".01" placeholder="100" name="saltoDis" id="saltoDis" class="formInput dist">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="routedis">
+                        <p>Quanto a distância da rota?</p>
+                    </label>
+                    <div class="form-row">
+                        <input type="number" step=".01" placeholder="100" name="routeDis" id="routeDis" class="formInput dist">
+                    </div>
+                </div>
+
+                
+                <button type="submit" class="formSubmit">Calcular!</button>
+
+            </form>
+        </div>
+        <div id="totalRoute">
+            Total da Rota:
+            <span id="routeValue">0.00</span> <p id="lucro"> por viagem</p>
+        </div>
+        <div id="totalSalt">
+            Saltos totais: <span id="salt">00</span>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+    
+</body>
+
+</html>

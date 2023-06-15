@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Mono);
+
+:root {
+    --primary-color: #121212;
+    --secondary-color: DimGrey;
+    --tertiary-color: Gainsboro;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+}
+
+#container {
+    height: fit-content;
+    width: 360px;
+    margin: 100px auto;
+    background:  #f7f7f7;
+    box-shadow: 0px 0px 18px 0px var(--tertiary-color);
+    border-radius: 20px;
+}
+
+.title {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+.tipsForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.formInput {
+    background: white;
+    width: 40px;
+    padding: 5px 5px 8px 8px;
+    text-align: center;
+}
+
+.formInput:focus {
+    border: 1px solid var(--primary-color);
+    outline: none;
+    text-align: center;
+}
+
+.formSelect {
+    width: 180px;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.formSubmit {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: var(--primary-color);
+    border-radius: 5pc;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    border: none;
+}
+
+#totalRoute {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#totalSalt {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-row {
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+}
+
+.form-row input {
+    width: 100%;
+    border:none;
+    border-radius: 5px;
+}
+
+.form-group {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+}
